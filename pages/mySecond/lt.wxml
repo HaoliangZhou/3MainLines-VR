@@ -1,0 +1,38 @@
+<view>
+  <view class="grad1"></view>
+  <view class="lt">论坛</view>
+  <view class="grad2"></view>
+</view>
+<view class="big">
+<view class="scroll_view">
+  <scroll-view class="scroll_x" scroll-x="true">
+    <view data-sid="0" class="{{currentTab==0?'selected':'default'}}" bindtap="viewTap1">{{caidan1}}</view>
+    <view data-sid="1" class="{{currentTab==1?'selected':'default'}}" bindtap="viewTap1" bindtap="formSubmit">{{caidan2}}</view>
+  </scroll-view>
+</view>
+<view class="hr1 "></view>
+<swiper current="{{currentTab}} " class="swiper_form">
+  <swiper-item>
+    <view>
+      <form bindsubmit="formSubmit" bindreset="formReset" class="form1">
+        <view class="form11">
+          <input name="input1" placeholder="请输入姓名"></input>
+        </view>
+        <view class="form12">
+          <input name="input2" placeholder="请输入讨论内容"></input>
+        </view>
+        <button form-type="submit" type="primary">提交</button>
+      </form>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view wx:for="{{exLt}}" wx:for-index="i" wx:for-item="item" class="exLt2">
+      <view class="ltNo">讨论{{i+1}}</view>
+      <view class="ltnc">
+        <view class="ltName">{{item.ltName}}</view>
+        <view class="ltContent">{{item.ltContent}}</view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>
+</view>

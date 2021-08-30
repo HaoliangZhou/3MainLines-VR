@@ -1,0 +1,141 @@
+<view class="exTop">
+  <view data-sid="0" class="{{currentTab==0?'selected':'default'}}" bindtap="viewTap1">我的实验</view>
+  <view data-sid="1" class="{{currentTab==1?'selected':'default'}}" bindtap="viewTap1">实验题库</view>
+</view>
+<view class="exContent">
+  <swiper current="{{currentTab}}" class="wlBanner" bindchange="wlBanner">
+    <!-- 我的实验swiper-item -->
+    <swiper-item >
+      <view class="exContent_img" wx:for="{{exPic}}">
+        <image src="{{item.expLogo}}" />
+      </view>
+      <view class="exContent_txt">
+        <view class="exContent_txt_title">实验进程</view>
+        <!-- 采购任务分配 -->
+        <view class="exContent_txt_content" >
+          <view>
+            <image src="../images/exStep.png" />
+          </view>
+          <view class="exContent_txt_content_tittle">{{exStep0.stepName}}</view>
+          <view class="exContent_txt_content_sj">
+            <view>时长:6</view>
+            <view>积分:{{exStep0.stepPoint}}</view>
+          </view>
+        </view>
+        <!-- 采购询价 -->
+        <view class="exContent_txt_content">
+          <view>
+            <image src="../images/exStep.png" />
+          </view>
+          <view class="exContent_txt_content_tittle">{{exStep1.stepName}}</view>
+          <view class="exContent_txt_content_sj">
+            <view>时长:6</view>
+            <view>积分:{{exStep1.stepPoint}}</view>
+          </view>
+        </view>
+        <!-- 物资审价 -->
+        <view class="exContent_txt_content">
+          <view>
+            <image src="../images/exStep.png" />
+          </view>
+          <view class="exContent_txt_content_tittle">{{exStep2.stepName}}</view>
+          <view class="exContent_txt_content_sj">
+            <view>时长:6</view>
+            <view>积分:{{exStep2.stepPoint}}</view>
+          </view>
+        </view>
+        <!-- 采购合同录入 -->
+        <view class="exContent_txt_content" >
+          <view>
+            <image src="../images/exStep.png" />
+          </view>
+          <view class="exContent_txt_content_tittle">{{exStep3.stepName}}</view>
+          <view class="exContent_txt_content_sj">
+            <view>时长:6</view>
+            <view>积分:{{exStep3.stepPoint}}</view>
+          </view>
+        </view>
+        <!-- 采购合同审核 -->
+        <view class="exContent_txt_content">
+          <view>
+            <image src="../images/exStep.png" />
+          </view>
+          <view class="exContent_txt_content_tittle">{{exStep4.stepName}}</view>
+          <view class="exContent_txt_content_sj">
+            <view>时长:6</view>
+            <view>积分:{{exStep4.stepPoint}}</view>
+          </view>
+        </view>
+        <!-- 采购发票录入 -->
+        <view class="exContent_txt_content">
+          <view>
+            <image src="../images/exStep.png" />
+          </view>
+          <view class="exContent_txt_content_tittle">{{exStep5.stepName}}</view>
+          <view class="exContent_txt_content_sj">
+            <view>时长:6</view>
+            <view>积分:{{exStep5.stepPoint}}</view>
+          </view>
+        </view>
+        <!-- 采购询价微课视频 -->
+        <view class="exContent_txt_content">
+          <view>
+            <image src="../images/exStep.png" />
+          </view>
+          <view class="exContent_txt_content_tittle">{{exStep6.stepName}}</view>
+          <view class="exContent_txt_content_sj">
+            <view>时长:6</view>
+            <view>积分:{{exStep6.stepPoint}}</view>
+          </view>
+        </view>
+        <!-- 试题 -->
+        <view class="exContent_txt_content">
+          <view>
+            <image src="../images/exStep.png" />
+          </view>
+          <view class="exContent_txt_content_tittle">{{exStep7.stepName}}</view>
+          <view class="exContent_txt_content_sj">
+            <view>时长:6</view>
+            <view>积分:{{exStep7.stepPoint}}</view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 我的试题swiper-item -->
+    <swiper-item>
+      <view wx:for="{{exExam}}" wx:for-index="i" wx:for-item="item">
+        <view class="exExam2">
+          <view>{{item.examDifficulty}}</view>
+          <view style="background-color:gray;">{{item.examScore}}.00分</view>
+        </view>
+        <view class="exExam1">{{i+1}}.{{item.questionTitle}}</view>  
+        <view class="exExamA">
+          <view><image src="../images/a.png" /></view>
+          <view>{{item.answerA}}</view>
+        </view>
+        <view class="exExamB">
+          <view><image src="../images/b.png" /></view>
+          <view>{{item.answerB}}</view>
+        </view>
+        <view class="exExamC">
+          <view><image src="../images/c.png" /></view>
+          <view>{{item.answerC}}</view>
+        </view>
+        <view class="exExamD">
+          <view><image src="../images/d.png" /></view>
+          <view>{{item.answerD}}</view>
+        </view>
+        <view class="rightAnswer">
+          <view></view>
+          <view class="right">正确答案:{{item.rightAnswer}}</view>
+          <view class="myAnswer">{{item.userKey}}</view>
+        </view>
+        <view class="grad1"></view>
+      </view>
+    </swiper-item>
+  </swiper>
+
+
+
+</view>

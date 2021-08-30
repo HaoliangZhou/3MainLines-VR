@@ -1,0 +1,46 @@
+<view class="head head-height">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <view class="userinfo">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="hr"></view>
+<view wx:for="{{login}}">
+  <view class="content">
+    <view class="pInfo">
+      <view class="c1">个人信息</view>
+      <view class="c2">
+        <!-- <view class="pSname">姓名:{{pSname}}</view>
+      <view class="pSno">学号:{{pSno}}</view>
+      <view class="pEmail">邮箱:{{pEmail}}</view> -->
+        <view class="pSname">姓名:{{item.displayname}}</view>
+        <view class="pSno">学号:{{item.sno}}</view>
+        <view class="pEmail">邮箱:{{item.email}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="hr1"></view>
+  <view class="content">
+    <view class="cInfo">
+      <view class="c1">班级信息</view>
+      <view class="c2">
+        <!-- <view class="cClass">班级:{{cClass}}</view>
+      <view class="cMajor">专业:{{cMajor}}</view>
+      <view class="cCollege">学院:{{cCollege}}</view> -->
+        <view class="cClass">班级:{{item.className}}</view>
+        <view class="cMajor">专业:{{item.subject}}</view>
+        <view class="cCollege">学院:{{item.college}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="hr2"></view>
+</view>
+<view class="changezh">
+  <button bindtap="toLogin">切换账号</button>
+</view>
+<view>{{textnum}}</view>

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/myFirst/myF1",
+    "pages/mySecond/myS1",
+    "pages/logs/logs",
+    "pages/myFirst/detail1",
+    "pages/mySecond/sc",
+    "pages/mySecond/cb",
+    "pages/mySecond/wl",
+    "pages/mySecond/lt",
+    "pages/myThird/cggl",
+    "pages/index/login",
+    "pages/mySecond/phb"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/myFirst/myF1",
+        "text": "首页",
+        "iconPath": "pages/images/shouye.png",
+        "selectedIconPath": "pages/images/shouye1.png"
+      },
+      {
+        "pagePath": "pages/mySecond/myS1",
+        "text": "发现",
+        "iconPath": "pages/images/xiaoxi.png",
+        "selectedIconPath": "pages/images/xiaoxi1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "pages/images/wode.png",
+        "selectedIconPath": "pages/images/wode1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

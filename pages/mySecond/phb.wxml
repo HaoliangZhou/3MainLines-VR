@@ -1,0 +1,21 @@
+<view class="wlzx_title">
+  <view class="grad1"></view>
+  <view class="wlzx">QYGL排行榜</view>
+  <view class="grad2"></view>
+</view>
+<view wx:for="{{exPhb}}" wx:for-index="i" wx:for-item="item"  >
+  <view class="{{i%2==0?'exPhb01':'exPhb02'}}" >
+    <view class="dn">{{i+1}}</view>
+    <view class="touxiang">
+      <image src="{{item.photoUrl}}"></image>
+    </view>
+    <view class="exPhb1">
+      <view>姓名:{{item.displayName}}</view>
+      <view>学号:{{item.sno}}</view>
+    </view>
+    <view class="exPhb2">
+      <view>积分:{{item.jf}}</view>
+      <view>时长:{{item.sc}}</view>
+    </view>
+  </view>
+</view>

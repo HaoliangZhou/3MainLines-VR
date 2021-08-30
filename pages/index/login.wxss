@@ -1,0 +1,73 @@
+.textareaT {
+  margin-top: 10px;
+  height: 60rpx;
+  width: 90%;
+  font-size: 15px;
+  display: flex;
+  margin-left: 5%;
+  justify-content: space-between;
+  border: 1px solid darkgrey;
+  border-radius: 3px;
+}
+
+
+.textareaT2 {
+  margin-top: 10px;
+  width: 90%;
+  height: 340rpx;
+  margin-left: 5%;
+  border: 1px solid darkgrey;
+  border-radius: 3px;
+}
+
+
+text {
+  margin-top: 40rpx;
+  font-size: 13px;
+  color: darkgrey;
+  width: 90%;
+  margin-left: 5%;
+}
+
+
+.submitClick {
+  width: 80%;
+  color: white;
+  background: #06a6e4;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+.imgrili {
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+
+.textriqi {
+  margin-top: 15rpx;
+  width: 60%;
+  height: 30rpx;
+}
+
+
+.itemView {
+
+
+  height: 60rpx;
+  display: flex;
+  justify-content: space-around;
+  font-size: 13.0px;
+  margin-top: 20rpx;
+}
+.lineV{
+  width: 95%;
+  height: 2rpx;
+  background: darkgrey;
+  display: flex;
+  margin-left: 2.5%;
+  justify-content: space-around;
+}

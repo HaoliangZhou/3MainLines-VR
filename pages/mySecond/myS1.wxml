@@ -1,0 +1,33 @@
+<view class="hr"></view>
+<view class="tupian">
+  <view class="d0">
+    <view class="d3">2019.7.10   21:55</view>
+    <view class="d1">
+      <image src="../images/t3.jpg"></image>
+    </view>
+    <view class="d2">
+      <image src="../images/t31.jpg"></image>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="d0">
+    <view class="d3">Sunday  21:54</view>
+    <view class="d1">
+      <image src="../images/t2.jpg"></image>
+    </view>
+    <view class="d2">
+      <image src="../images/t21.jpg"></image>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="d0">
+    <view class="d3">Yesterday   22:13</view>
+    <view class="d1">
+      <image src="../images/t1.jpg"></image>
+    </view>
+    <view class="d2">
+      <image src="../images/t11.jpg"></image>
+    </view>
+  </view>
+</view>
+<view class="hr"></view>

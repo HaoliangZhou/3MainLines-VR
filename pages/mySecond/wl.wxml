@@ -1,0 +1,51 @@
+<!--pages/mySecond/wl.wxml-->
+<view class="wlzx_title">
+  <view class="grad1"></view>
+  <view class="wlzx">物流主线</view>
+  <view class="grad2"></view>
+</view>
+<view class="scroll_view">
+  <scroll-view class="scroll_x" scroll-x="true">
+    <view data-sid="0" class="{{currentTab==0?'selected':'default'}}" bindtap="viewTap1" id="W001">{{caidan1}}</view>
+    <view data-sid="1" class="{{currentTab==1?'selected':'default'}}" bindtap="viewTap1" id="W002">{{caidan2}}</view>
+    <view data-sid="2" class="{{currentTab==2?'selected':'default'}}" bindtap="viewTap1" id="W003">{{caidan3}}</view>
+    <view data-sid="3" class="{{currentTab==3?'selected':'default'}}" bindtap="viewTap1" id="W004">{{caidan4}}</view>
+  </scroll-view>
+</view>
+<view class="hr1"></view>
+<view>
+  <swiper current="{{currentTab}}" class="wlBanner" bindchange="wlBanner">
+    <swiper-item>
+      <view bindtap="viewNewsTap">
+        <image src="../images/selectUI/W001.png" />
+      </view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlTitle">{{item.expName}}</view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlContent">{{item.expAbstract}}</view>
+      <view class="enterEx" bindtap="enterEx" id="W001">进入实验-></view>
+    </swiper-item>
+    <swiper-item>
+      <view bindtap="viewNewsTap">
+        <image src="../images/selectUI/W002.png" />
+      </view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlTitle">{{item.expName}}</view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlContent">{{item.expAbstract}}</view>
+      <view class="enterEx" bindtap="enterEx" id="W002">进入实验-></view>
+    </swiper-item>
+    <swiper-item>
+      <view bindtap="viewNewsTap">
+        <image src="../images/selectUI/W003.png" />
+      </view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlTitle">{{item.expName}}</view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlContent">{{item.expAbstract}}</view>
+      <view class="enterEx" bindtap="enterEx" id="W003">进入实验-></view>
+    </swiper-item>
+    <swiper-item>
+      <view bindtap="viewNewsTap">
+        <image src="../images/selectUI/W004.png" />
+      </view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlTitle">{{item.expName}}</view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlContent">{{item.expAbstract}}</view>
+      <view class="enterEx" bindtap="enterEx" id="W004">进入实验-></view>
+    </swiper-item>
+  </swiper>
+</view>

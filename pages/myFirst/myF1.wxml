@@ -1,0 +1,42 @@
+<view class="banner">
+  <swiper class="banner_swiper" current="{{currentTab}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="white">
+    <include src="banner"></include>
+  </swiper>
+</view>
+<view class="content">
+  <view class="content_up">
+    <view class="content1"> <!-- 左边 -->
+      <image src="../images/shengchan.png" bindtap="scTap"></image>
+      <view bindtap="scTap">生产主线</view>
+    </view>
+    <view class="grad2"></view>
+    <view class="content2"><!-- 右边 -->
+      <image src="../images/wuliu.png" bindtap="wlTap"></image>
+      <view bindtap="wlTap">物流主线</view>
+    </view>
+  </view>
+  <view class="grad1"></view>
+  <view class="content_down">
+    <view class="content1"><!-- 左边 -->
+      <image src="../images/chengben.png" bindtap="cbTap"></image>
+      <view bindtap="cbTap">成本主线</view>  
+    </view>
+    <view class="grad2"></view>
+    <view class="content2"><!-- 右边 -->
+      <image src="../images/paihang.png" bindtap="phbTap"></image>
+      <view bindtap="phbTap">排行榜</view>
+    </view>
+  </view>
+  <view class="grad1"></view>
+  <view class="content_down">
+    <view class="content1"><!-- 左边 -->
+      <image src="../images/tiku.png" bindtap="tkTap"></image>
+      <view bindtap="tkTap">题    库</view>  
+    </view>
+    <view class="grad2"></view>
+    <view class="content2"><!-- 右边 -->
+      <image src="../images/luntan.png" bindtap="ltTap"></image>
+      <view bindtap="ltTap">论    坛</view>
+    </view>
+  </view>
+</view>

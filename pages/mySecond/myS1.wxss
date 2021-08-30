@@ -1,0 +1,27 @@
+.tupian{
+  background-color:#f4f5f6;
+}
+.d1 image{
+  width:90%;
+  height: 150px;
+  margin-left: 5%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.d2 image{
+  width:90%;
+  height: 80px;
+  margin-left: 5%; 
+  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.hr{
+  height: 15px;
+  background-color:#f4f5f6; 
+}
+.d3{
+  text-align: center;
+  color: grey;
+  font-size: 14px;
+}

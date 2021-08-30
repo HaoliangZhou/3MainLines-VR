@@ -1,0 +1,89 @@
+.wlzx_title{
+  display: flex;
+  flex-direction: row;
+}
+.wlzx{
+  margin: 5px;
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 微软雅黑;
+}
+.grad1{
+  height: 1px;
+	width:370px;
+  background: linear-gradient(to right,white, black);
+  /* margin-left: 25px;*/
+  margin-top: 20px; 
+}
+.grad2{
+  height: 1px;
+	width:370px;
+  background: linear-gradient(to left, white, black);
+  /* margin-left: 25px;*/
+  margin-top: 20px; 
+}
+.scroll_x{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.scroll_x_item{
+  display: inline-block;
+  padding-left: 10px;
+}
+.scroll_x view{
+  text-align: center;
+  padding-top: 15px;
+  display: inline-block;
+  width:140px;
+  height: 40px;
+  /* border: 1px solid red; */
+  border-radius: 10%;
+  margin-left: 2px;
+  font-size: 17px;
+  font-family: 微软雅黑;
+  color: whitesmoke;
+  opacity: 0.8;
+}
+.selected{
+  background-color: #76c1c4;
+}
+.default{
+  background-color: #f39800;
+}
+.hr1{
+  height: 12px;
+}
+.wlBanner{
+  height:500px;
+}
+.wlBanner image{
+  width: 100%;
+  height: 210px;
+}
+.wlTitle{
+  width:100%;
+  height: 30px;
+  font-size: 17px;
+  font-family: 微软雅黑;
+  margin-top: 20px;
+  padding-left: 15px;
+  border-bottom: 2px solid #f4f5f6;
+}
+.wlContent{
+  width: 345px;
+  height: 100px;
+  font-size: 15px;
+  font-family: 微软雅黑;
+  padding-left: 15px;
+  margin-top:8px;
+  line-height: 25px;
+  text-indent: 1em;
+  /* border-bottom: 2px solid #f4f5f6; */
+}
+.enterEx{
+  margin-left: 280px;
+  margin-top: 40px;
+}

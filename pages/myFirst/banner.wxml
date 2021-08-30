@@ -1,0 +1,5 @@
+<block wx:for="{{imgUrls}}">
+  <swiper-item bindtap="bannerTap">
+    <image src="{{item}}"/>
+  </swiper-item>
+</block>

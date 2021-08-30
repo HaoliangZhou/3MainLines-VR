@@ -1,0 +1,76 @@
+.head-height {
+  height: 230rpx;
+}
+
+.head {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  align-items: center;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  margin-left:10px; 
+}
+
+.userinfo-avatar {
+  width: 138rpx;
+  height: 138rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #000;
+  font-size: 18px;
+}
+.hr{
+  height: 15px;
+  background-color:#f4f5f6; 
+}
+.hr1{
+  height: 11px;
+  background-color:#f4f5f6; 
+}
+.hr2{
+  height: 11px;
+}
+/**以下为内容**/
+.content{
+  margin-top: 13px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 25%;
+}
+.content view{
+  margin-top: 9px;
+  letter-spacing: 1px;
+  font-family: 微软雅黑;
+}
+
+.pInfo{
+  border-radius: 5%;
+}
+.c1{
+  color: #b1b1b1;
+  width: 100%;
+  font-size: 16px;
+  border-bottom: 1px solid #f4f5f6;
+}
+.c2 view {
+  font-size: 16px;
+  height: 35px;
+  padding-top: 3px;
+}
+.pSname,.pSno,.cClass,.cMajor,.cCollege{
+  border-bottom: 1px solid #f2f3f4;
+}
+.changezh button{
+  font-size: 17px;
+  letter-spacing: 2px;
+}

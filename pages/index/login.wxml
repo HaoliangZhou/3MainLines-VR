@@ -1,0 +1,22 @@
+<view class="section">
+  <form bindsubmit="bindFormSubmit" bindreset="formReset">
+    <text>日期选择</text>
+    <view class="textareaT" name="userName">
+      <text class="textriqi">{{dateValue}}</text>
+      <picker mode="date" value="{{dateValue}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange">
+      </picker>
+    </view>
+    <text>绑定您的学号</text>
+    <view class="textareaT2" name="userName">
+      <view class="itemView">学号：
+        <input name="userSno" placeholder="请输入学号"/>
+      </view>
+      <view class="lineV"></view>
+      <view class="itemView">姓名：
+        <input name="userName" placeholder="请输入姓名"/>
+      </view>
+    </view>
+    <button class="submitClick" formType="submit"> 确 定</button>
+  </form>
+  <button class="submitClick" bindtap="login"> 登 录</button>
+</view>

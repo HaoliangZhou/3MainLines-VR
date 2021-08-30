@@ -1,0 +1,69 @@
+<!--pages/mySecond/wl.wxml-->
+<view class="wlzx_title">
+  <view class="grad1"></view>
+  <view class="wlzx">成本主线</view>
+  <view class="grad2"></view>
+</view>
+<view class="scroll_view">
+  <scroll-view class="scroll_x" scroll-x="true">
+    <view data-sid="0" class="{{currentTab==0?'selected':'default'}}" bindtap="viewTap1" id="C001">{{caidan1}}</view>
+    <view data-sid="1" class="{{currentTab==1?'selected':'default'}}" bindtap="viewTap1" id="C002">{{caidan2}}</view>
+    <view data-sid="2" class="{{currentTab==2?'selected':'default'}}" bindtap="viewTap1" id="C003">{{caidan3}}</view>
+    <view data-sid="3" class="{{currentTab==3?'selected':'default'}}" bindtap="viewTap1" id="C004">{{caidan4}}</view>
+    <view data-sid="4" class="{{currentTab==4?'selected':'default'}}" bindtap="viewTap1" id="C005">{{caidan2}}</view>
+    <view data-sid="5" class="{{currentTab==5?'selected':'default'}}" bindtap="viewTap1" id="C006">{{caidan3}}</view>
+  </scroll-view>
+</view>
+<view class="hr1"></view>
+<view>
+  <swiper current="{{currentTab}}" class="wlBanner" bindchange="wlBanner">
+    <swiper-item>
+      <view bindtap="viewNewsTap">
+        <image src="../images/selectUI/C001.png" />
+      </view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlTitle">{{item.expName}}</view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlContent">{{item.expAbstract}}</view>
+      <view class="enterEx" bindtap="enterEx" id="C001">进入实验-></view>
+    </swiper-item>
+    <swiper-item>
+      <view bindtap="viewNewsTap">
+        <image src="../images/selectUI/C002.png" />
+      </view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlTitle">{{item.expName}}</view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlContent">{{item.expAbstract}}</view>
+      <view class="enterEx" bindtap="enterEx" id="C002">进入实验-></view>
+    </swiper-item>
+    <swiper-item>
+      <view bindtap="viewNewsTap">
+        <image src="../images/selectUI/C003.png" />
+      </view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlTitle">{{item.expName}}</view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlContent">{{item.expAbstract}}</view>
+      <view class="enterEx" bindtap="enterEx" id="C003">进入实验-></view>
+    </swiper-item>
+    <swiper-item>
+      <view bindtap="viewNewsTap">
+        <image src="../images/selectUI/C004.png" />
+      </view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlTitle">{{item.expName}}</view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlContent">{{item.expAbstract}}</view>
+      <view class="enterEx" bindtap="enterEx" id="C004">进入实验-></view>
+    </swiper-item>
+    <swiper-item>
+      <view bindtap="viewNewsTap">
+        <image src="../images/selectUI/C005.png" />
+      </view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlTitle">{{item.expName}}</view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlContent">{{item.expAbstract}}</view>
+      <view class="enterEx" bindtap="enterEx" id="C005">进入实验-></view>
+    </swiper-item>
+    <swiper-item>
+      <view bindtap="viewNewsTap">
+        <image src="../images/selectUI/C006.png" />
+      </view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlTitle">{{item.expName}}</view>
+      <view wx:for="{{wljj}}" wx:for-item="item" class="wlContent">{{item.expAbstract}}</view>
+      <view class="enterEx" bindtap="enterEx" id="C006">进入实验-></view>
+    </swiper-item>
+  </swiper>
+</view>
